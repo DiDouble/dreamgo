@@ -7,10 +7,10 @@
 package controller
 
 import (
-	"datasource"
+	"dreamgo/datasource"
+	"dreamgo/route"
+	"dreamgo/view"
 	"net/http"
-	"route"
-	"view"
 )
 
 type ArchiveController struct{}

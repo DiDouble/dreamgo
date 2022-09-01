@@ -2,17 +2,17 @@ package datasource
 
 import (
 	"database/sql"
+	"dreamgo/global"
+	"dreamgo/model"
+	"dreamgo/util"
 	"fmt"
-	"global"
 	"io/ioutil"
 	"log"
-	"model"
 	"net/http"
 	"os"
 	"sort"
 	"strconv"
 	"time"
-	"util"
 
 	_ "github.com/go-sql-driver/mysql" // data source
 	"github.com/pkg/errors"

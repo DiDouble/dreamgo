@@ -7,14 +7,14 @@
 package controller
 
 import (
+	"dreamgo/route"
 	"net/http"
 	"path/filepath"
-	"route"
 	"strings"
 
-	"datasource"
-	"util"
-	"view"
+	"dreamgo/datasource"
+	"dreamgo/util"
+	"dreamgo/view"
 )
 
 type PostController struct{}

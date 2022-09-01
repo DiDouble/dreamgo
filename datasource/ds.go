@@ -8,8 +8,8 @@ package datasource
 
 import (
 	"bytes"
-	"config"
-	"model"
+	"dreamgo/config"
+	"dreamgo/model"
 	"net/http"
 	"strings"
 

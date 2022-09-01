@@ -7,7 +7,7 @@ import (
 	"path"
 	"time"
 
-	"global"
+	"dreamgo/global"
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 	"gopkg.in/natefinch/lumberjack.v2"

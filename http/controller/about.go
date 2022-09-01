@@ -7,11 +7,11 @@
 package controller
 
 import (
-	"datasource"
-	"logger"
+	"dreamgo/datasource"
+	"dreamgo/logger"
+	"dreamgo/route"
+	"dreamgo/view"
 	"net/http"
-	"route"
-	"view"
 )
 
 type AboutController struct{}

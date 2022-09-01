@@ -7,13 +7,13 @@
 package controller
 
 import (
-	"datasource"
+	"dreamgo/datasource"
+	"dreamgo/route"
+	"dreamgo/view"
 	"net/http"
 	"net/url"
 	"path/filepath"
-	"route"
 	"sort"
-	"view"
 )
 
 type TagController struct{}

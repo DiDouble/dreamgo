@@ -7,8 +7,8 @@
 package datasource_test
 
 import (
-	"datasource"
-	"global"
+	"dreamgo/datasource"
+	"dreamgo/global"
 	"os"
 	"strings"
 

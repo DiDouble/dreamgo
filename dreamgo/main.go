@@ -7,16 +7,17 @@
 package main
 
 import (
-	"config"
-	"datasource"
+	"dreamgo/config"
+	"dreamgo/datasource"
+	"dreamgo/global"
+	"dreamgo/http/controller"
+	"dreamgo/logger"
+	"dreamgo/route"
 	"flag"
-	"global"
-	"http/controller"
+	"fmt"
 	"log"
-	"logger"
 	"math/rand"
 	"net/http"
-	"route"
 	"strings"
 	"time"
 )
@@ -39,8 +40,10 @@ func main() {
 	global.App.InitPath()
 
 	if strings.HasPrefix(configFile, "/") { //以/开头为绝对路径，直接解析
+		fmt.Printf("configFile is :%s\n", configFile)
 		config.Parse(configFile)
 	} else { // 相对路径，以程序根目录为基础解析
+		fmt.Printf("global.App.ProjectRoot is : %s\n", global.App.ProjectRoot)
 		config.Parse(global.App.ProjectRoot + configFile)
 	}
 	datasource.Init()

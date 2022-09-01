@@ -86,7 +86,7 @@ func (this *app) Uptime() time.Duration {
 
 func (this *app) setProjectRoot() {
 	curFilename := os.Args[0]
-
+	//curFilename, _ = os.Getwd()
 	binaryPath, err := exec.LookPath(curFilename)
 	if err != nil {
 		panic(err)

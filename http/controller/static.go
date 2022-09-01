@@ -1,9 +1,9 @@
 package controller
 
 import (
-	"global"
+	"dreamgo/global"
+	"dreamgo/route"
 	"net/http"
-	"route"
 	"strings"
 )
 
