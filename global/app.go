@@ -104,7 +104,7 @@ func (this *app) setProjectRoot() {
 
 // SetTemplateDir 设置模板目录
 func (this *app) SetTemplateDir(theme string) {
-	this.TemplateDir = this.ProjectRoot + "template/theme/" + theme + "/"
+	this.TemplateDir = "template/theme/" + theme + "/"
 }
 
 // PrintVersion prints current version info
